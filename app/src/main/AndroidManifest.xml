@@ -10,14 +10,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidCourse"
-        >
+        android:theme="@style/Theme.AndroidCourse">
+        <activity
+            android:name=".chapter05.RecycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chapter05.CommonViewActivity"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".chapter03.DialActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DIAL" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="tel" />
             </intent-filter>
         </activity>
@@ -39,21 +48,21 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.chapter03.ACTION_START_SECOND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".chapter03.FirstActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
         </activity>
     </application>
 

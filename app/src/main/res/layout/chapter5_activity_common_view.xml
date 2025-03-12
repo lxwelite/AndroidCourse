@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="姓名:"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEFDF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择兴趣爱好："
+            android:textColor="#FF8000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/like_shuttlecock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="羽毛球"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/like_basketball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="篮球"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/like_pingpong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乒乓球"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您选择的兴趣爱好为："
+            android:textColor="#FF8000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.sanda.androidcourse.chapter05.CircleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/jumpToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到列表页面"/>
+
+</LinearLayout>
