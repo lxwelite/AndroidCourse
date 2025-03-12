@@ -1,4 +1,4 @@
-package com.sanda.androidcourse.chapter05;
+package com.sanda.androidcourse.chapter04;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sanda.androidcourse.MainActivity;
 import com.sanda.androidcourse.R;
 
 
@@ -23,9 +22,9 @@ public class RecycleViewActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private HomeAdapter mAdapter;
     private String[] names = {"小猫", "哈士奇", "小黄鸭", "小鹿", "老虎","小猫", "哈士奇", "小黄鸭", "小鹿", "老虎"};
-    private int[] imgs = {R.drawable.cat, R.drawable.siberiankusky,
-            R.drawable.yellowduck, R.drawable.fawn, R.drawable.tiger,R.drawable.cat, R.drawable.siberiankusky,
-            R.drawable.yellowduck, R.drawable.fawn, R.drawable.tiger};
+    private int[] imgs = {R.drawable.chapter4_cat, R.drawable.chapter4_siberiankusky,
+            R.drawable.chapter4_yellowduck, R.drawable.chapter4_fawn, R.drawable.chapter4_tiger,R.drawable.chapter4_cat, R.drawable.chapter4_siberiankusky,
+            R.drawable.chapter4_yellowduck, R.drawable.chapter4_fawn, R.drawable.chapter4_tiger};
     private String[] introduces = {
             "猫，属于猫科动物，分家猫、野猫，是全世界家庭中较为广泛的宠物。",
             "西伯利亚雪橇犬，常见别名哈士奇，昵称为二哈。",
@@ -42,7 +41,7 @@ public class RecycleViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.chapter5_recycle_view);
+        setContentView(R.layout.chapter4_recycle_view);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -57,7 +56,7 @@ public class RecycleViewActivity extends AppCompatActivity {
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(RecycleViewActivity.this).inflate(
-                    R.layout.chapter5_animal_list_item,null);
+                    R.layout.chapter4_animal_list_item,null);
             MyViewHolder holder = new MyViewHolder(view);
             return holder;
         }

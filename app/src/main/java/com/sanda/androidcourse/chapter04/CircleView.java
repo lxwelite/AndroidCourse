@@ -1,4 +1,4 @@
-package com.sanda.androidcourse.chapter05;
+package com.sanda.androidcourse.chapter04;
 
 import android.content.Context;
 import android.graphics.Canvas;

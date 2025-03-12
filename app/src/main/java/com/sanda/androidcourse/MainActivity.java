@@ -12,7 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sanda.androidcourse.chapter03.FirstActivity;
-import com.sanda.androidcourse.chapter05.CommonViewActivity;
+import com.sanda.androidcourse.chapter04.CommonViewActivity;
+import com.sanda.androidcourse.chapter05.MenuActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,10 +43,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        chapter5Button.setOnClickListener(new View.OnClickListener() {
+        chapter4Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CommonViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        chapter5Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });

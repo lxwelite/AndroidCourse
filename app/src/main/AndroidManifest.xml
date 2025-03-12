@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCourse">
         <activity
-            android:name=".chapter05.RecycleViewActivity"
+            android:name=".chapter05.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".chapter05.CommonViewActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".chapter04.RecycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chapter04.CommonViewActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".chapter03.DialActivity"
             android:exported="true">
@@ -54,10 +55,10 @@
         </activity>
         <activity
             android:name=".chapter03.FirstActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

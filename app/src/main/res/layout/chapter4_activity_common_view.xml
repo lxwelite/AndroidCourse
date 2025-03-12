@@ -96,7 +96,7 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <com.sanda.androidcourse.chapter05.CircleView
+    <com.sanda.androidcourse.chapter04.CircleView
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
