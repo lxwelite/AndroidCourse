@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chapter03.FirstActivity">
+
+    <TextView
+        android:id="@+id/first_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是第一个页面"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1-lamda表达式 跳转到Second Activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_textview" />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2- click me 跳转到Second Activity"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/first_button" />
+
+    <Button
+        android:id="@+id/third_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-传递String参数到第二个页面"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/second_button" />
+
+    <Button
+        android:id="@+id/fourth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4-传递bundle参数到第二个页面"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/third_button" />
+
+    <Button
+        android:id="@+id/fifth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5-隐式跳转到Second Activity"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_button" />
+
+    <Button
+        android:id="@+id/sixth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6-隐式跳转打开一个网页WebActivity"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_button" />
+
+
+    <Button
+        android:id="@+id/seventh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7-隐式跳转打开电话页面"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/sixth_button" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/back_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="接收来自SecondActivity的数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seventh_button" />
+
+
+    <Button
+        android:id="@+id/eighth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8-StartActivityForResult()方法跳转到SecondActivity"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/back_textview" />
+
+
+    <Button
+        android:id="@+id/ninth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9-API10及以上跳转到SecondActivity获取返回数据"
+        app:layout_constraintLeft_toLeftOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/eighth_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

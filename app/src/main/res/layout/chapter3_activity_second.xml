@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27CDDC39"
+    tools:context=".chapter03.SecondActivity">
+
+    <TextView
+        android:id="@+id/top_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="这是第二个页面"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/middle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="接收来自String的数据"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_textview" />
+
+    <TextView
+        android:id="@+id/bottom_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="接收来自Bundle的数据"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/middle_textView" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="finish关闭页面"
+        app:layout_constraintLeft_toLeftOf="@+id/top_textview"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_textView" />
+
+
+    <Button
+        android:id="@+id/finish_back_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API10以下关闭页面并且返回数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_button" />
+
+    <Button
+        android:id="@+id/finish_back_data_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API10以上关闭页面并且返回数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_back_data_button"
+        app:rippleColor="#FFC107" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
